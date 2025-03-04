@@ -1,0 +1,43 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+body {
+  background-color: #F5EABB;
+  padding: 20px;
+  font-family: "Cormorant Garamond", serif;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 4%;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  text-decoration: none;
+  text-align: center;
+  border: solid 2px #D41E00;
+  padding: 4px 15px;
+  border-radius: 8px;
+  transition-duration: 0.6s;
+  cursor: pointer;
+}
+nav a:hover {
+  background-color: #D41E00;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+nav a:active {
+  transform: translateY(6px);
+}
+#valittu {
+  background-color: #D41E00;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+div {
+  display: inline-block;
+}
