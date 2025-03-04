@@ -1,0 +1,11 @@
+body {
+  background-color: #F5EABB;
+  padding: 20px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.Yhteistiedot {
+  display: flex;
+  justify-content: center;
+  padding: 4%;
+}
