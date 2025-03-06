@@ -1,11 +1,48 @@
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 body {
   background-color: #F5EABB;
   padding: 20px;
   font-family: "Cormorant Garamond", serif;
 }
 
-.Yhteistiedot {
+header {
+  position: relative;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.ota_yhteytta {
   display: flex;
   justify-content: center;
   padding: 4%;
+
+}
+
+.ota_yhteytta h1 {
+  font-size: 47px;
+}
+
+.ota_yhteytta_p {
+  text-align: left;
+  max-width: 600px;
+  margin-left: -5px;
+  font-size: 20px;
+}
+
+footer {
+  font-family: otsikko, "sans serif";
+  font-size: 18px;
+  color: #FFFF;
+  background-color: #481D01;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  flex-direction: column;
+  text-align: center;
 }
