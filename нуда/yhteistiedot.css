@@ -23,12 +23,19 @@ header {
 
 }
 
-.ota_yhteytta h3 {}
-
-
 .ota_yhteytta h1 {
   font-size: 47px;
 }
+
+.ghfj {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
 
 .ota_yhteytta_p {
   text-align: left;
@@ -48,14 +55,7 @@ header {
   flex-direction: column;
   text-align: center;
 }*/
-.ghfj {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
+
 }
 
 .message-box {
@@ -68,7 +68,7 @@ header {
   border: 2px solid #481D01;
   border-radius: 8px;
   font-size: 16px;
-  width: 70%;
+  width: 80%;
 }
 
 .message-box textarea:focus {
@@ -95,5 +95,5 @@ header {
 
 textarea {
   margin-bottom: 10px;
-  /* Отступ между textarea и кнопкой */
+
 }
