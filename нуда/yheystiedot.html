@@ -14,7 +14,12 @@
         <div>
             <img src="Group 1.svg" alt="logo" class="logo" width="170">
         </div>
-
+        <div>
+            <nav class="nav-bar">
+                <a href="etusivu.html" target="_blank">Etusivu</a>
+                <a href="tuotesivu.html" target="_blank">Tuotesivu</a>
+                <a href="yheystiedot.html" target="_blank" id="valittu">Yhteystiedot</a>
+        </div>
         <div class="ota_yhteytta">
             <h1>Ota yhteyttä</h1>
         </div>
@@ -25,6 +30,7 @@
 <body>
     <div class="ghfj">
         <div class="ota_yhteytta_p">
+            <h4>ASIAKASPALVELU</h4>
 
             <p>
                 Sähköpostimme: energystorage@gmail.com
@@ -35,23 +41,31 @@
             </p>
         </div>
         <div>
-            <h2>Anna palautetta</h2>
+            <h2>YHTEYDENOTTOLOMAKE</h2>
+
             <form action="submit_review.php" method="POST">
                 <div class="message-box">
-                    <textarea name="review" placeholder="Palaute..." required></textarea>
+                    <textarea name="review" placeholder="Kirjoita tähän..." required></textarea>
                 </div>
-
-                <button type="submit" class="submit-button">Lähetä palaute</button>
+                <div class="input-box">
+                    <input type="text" name="customer_name" placeholder="Nimi" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="customer_id" placeholder="Asiakastunnus" required>
+                </div>
+                <br>
+                <button type="submit" class="submit-button">Lähetä lomake</button>
             </form>
         </div>
+
     </div>
     <div>
-        <h3>Yhteydenottolomake</h3>
+        <h3>ANNA PALAUTETTA</h3>
         <form action="submit_review.php" method="POST">
             <div class="message-box">
-                <textarea name="review" placeholder="Kirjoita tänne..." required></textarea>
+                <textarea name="review" placeholder="Palaute..." required></textarea>
             </div>
-            <button type="submit" class="submit-button">Lähetä lomake</button>
+            <button type="submit" class="submit-button">Lähetä palaute</button>
     </div>
 </body>
 

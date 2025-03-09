@@ -34,6 +34,7 @@ header {
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+
 }
 
 
@@ -56,7 +57,6 @@ header {
   text-align: center;
 }*/
 
-}
 
 .message-box {
   margin: 20px auto;
@@ -68,7 +68,7 @@ header {
   border: 2px solid #481D01;
   border-radius: 8px;
   font-size: 16px;
-  width: 80%;
+  width: 70%;
 }
 
 .message-box textarea:focus {
@@ -96,4 +96,35 @@ header {
 textarea {
   margin-bottom: 10px;
 
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  border: solid 2px #D41E00;
+  padding: 4px 15px;
+  border-radius: 8px;
+  transition-duration: 0.6s;
+  cursor: pointer;
+}
+
+nav a:hover {
+  background-color: #D41E00;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav a:active {
+  transform: translateY(6px);
+}
+
+#valittu {
+  background-color: #D41E00;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
