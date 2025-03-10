@@ -1,0 +1,575 @@
+:root {
+  --primary-color:#F5EABB;
+  --color1: #481D01;
+  --color2: #FFFFFF;
+  --color3: #D41E00;
+  --color4: #F5631A;
+  --color5: #481d01b5;
+  --color6: #f5631abd;
+  --color7: #ffeea2;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+}
+body {
+  background-color: var(--primary-color);
+}
+img {
+  max-width: 100%;  
+  display: block;
+}
+h1, h2, h3, h4, h5, h6, p, a{
+  word-wrap: break-word;
+}
+a, button  {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+/* header */
+.header-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;  
+  justify-content: space-around;
+  margin: 1.5vh;
+}
+.logo {
+  width: 17vh; 
+}
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+nav a {
+  color: var(--color1);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: solid 2px var(--color3);
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  transition-duration: 0.6s;
+  margin: 15px;
+}
+nav a:hover {
+  background-color: var(--color3);
+  color: var(--color2);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+nav a:active {
+  transform: translateY(6px);
+}
+#valittu {
+  background-color: var(--color3);
+  color: var(--color2);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.header-main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.banner-desktop {
+  display: block;
+}
+.banner-mobile {
+  display: none;
+}
+.cta {
+  position: absolute;
+  top: 30%;
+  left: 55%;
+  width: 45%;
+  text-align: center;
+}
+.cta h1 {
+  color: var(--color2);
+  font-size: 1.9em;
+}
+.cta p {
+  color: var(--color2);
+  font-size: 1.5em;
+  margin-bottom: 8%;
+}
+.cta button {
+  color: var(--color2);
+  font-size: 1.5em;
+  background-color: var(--color3);
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  padding: 0.3rem 2rem;
+  transition-duration: 0.6s;
+}
+.cta button:hover {
+  background-color: var(--color2);
+  color: var(--color3);
+  font-weight: bold;
+  border: solid 2px var(--color3);
+}
+.cta button:active {
+  transform: translateY(6px);
+}
+
+/* main content */
+.main-content-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2%;
+}
+.main-content-top p {
+  color: var(--color1);
+  width: 80%;
+  font-size: 24px;
+  line-height: 1.6rem;
+}
+.main-content-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+.bestselletit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.bestselletit h2 {
+  color: var(--color1);
+  font-size: 32px;
+}
+.tuotteet {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.tuotteet p {
+  color: var(--color1);
+}
+.tuote-card {
+  display: flex;
+  flex-direction: column;
+}
+.tuote-card img {
+  width: 10rem;
+}
+.tuote-info {
+  display: flex;
+  flex-direction: column;
+}
+.tuote-card p {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.heart, .cart, .twitter, .facebook, .tiktok, .instagram {
+  color: var(--color1);
+  transition-duration: 0.6s;
+}
+.heart:hover, .cart:hover, .twitter:hover, .facebook:hover, .tiktok:hover, .instagram:hover {
+  color: var(--color4);
+  cursor: pointer;
+}
+.heart:active, .cart:active, .twitter:active, .facebook:active, .tiktok:active, .instagram:active {
+  color: var(--color6);
+}
+.alennus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: var(--color1) 2px solid;
+  border-radius: 8px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  background-color: var(--color7);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.alennus h2 {
+  color: var(--color3);
+  font-weight: bold;
+  font-size: 32px;
+}
+.alennus-sisältö {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.alennus-sisältö p {
+  text-align: right;
+  width: 35%;
+  color: var(--color1);
+}
+.alennus-sisältö h3 {
+  width: 35%;
+  text-align: left;
+  color: var(--color1);
+  font-size: 25px;
+}
+.alennus-sisältö img {
+  width: 8rem;
+}
+.alennus button {
+  margin-top: 5%;
+  font-size: 1rem;
+  color: var(--color2);
+  background-color: var(--color3);
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 8px;
+  padding: 0.3rem 1.5rem;
+  transition-duration: 0.6s;
+}
+.alennus button:hover {
+  font-weight: bold;
+  background-color: var(--color2);
+  color: var(--color3);
+  border: solid 2px var(--color3);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.alennus button:active {
+  transform: translateY(6px);
+}
+.main-content-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 4%;
+  gap: 15px;
+  
+}
+.filters-left {
+  display: flex;
+  flex-direction: row;
+  gap: 1vh;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 8px;
+}
+.dropdown-btn {
+  background-color: var(--color1);
+  color: var(--color2);
+  text-align: center;
+  padding: 0.3rem 1.06rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  border-radius: 8px;
+  transition-duration: 0.6s;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 7.5rem;
+  border-radius: 8px;
+}
+.dropdown-content a {
+  display: block;
+  color: var(--color1);
+  padding: 0.3rem 1rem;
+  text-align: left;
+  transition-duration: 0.6s;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+.dropdown-content a:hover {
+  background-color: var(--color4);
+  color: var(--color2);
+  font-weight: bold;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropdown-btn {
+  background-color: var(--color2);
+  color: var(--color1);
+  font-weight: bold;
+}
+.tuotteet-bottom {
+  margin: 2vh 15vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2vh;
+}
+.tuotteet-bottom p {
+  color: var(--color1);
+}
+hr {
+  background-color: var(--color1);
+  border: none;
+  height: 3px;
+  margin: 6% 0;
+}
+/* footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 4%;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;align-items: center;
+  gap: 1vh;
+}
+th {
+  font-weight: bold;
+  color: var(--color1);
+  text-align: start;
+}
+td a{
+  color: var(--color1);
+}
+td {
+  color: var(--color1);
+}
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  gap: 3vh;
+}
+
+/* yhteystiedot sivu */
+.yhteystiedot-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+.yhteystiedot-main-content h1 {
+  text-align: center;
+  color: var(--color1);
+  font-size: 2.5rem;
+}
+.yhteystiedot-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  gap: 10vh;
+}
+.yhteystiedot-middle-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+}
+.yhteystiedot-middle-left th {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  border: solid 2px var(--color1);
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  transition-duration: 0.6s;
+}
+.yhteystiedot-middle-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+textarea {
+  width: 100%;
+}
+.user-info {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.btn-submit {
+  color: var(--color2);
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  background-color: var(--color4);
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  transition-duration: 0.6s;
+  margin: 15px;
+}
+.btn-submit:hover {
+  background-color: var(--color6);
+  font-weight: bold;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.btn-submit:active {
+  transform: translateY(6px);
+}
+.yhteystiedot-bottom {
+  display: flex;
+  background-color: orange;
+  width: 200px;
+}
+@media screen and (max-width: 1200px) {
+  
+  /* header */
+  .cta {
+    top: 15%;
+    width: 38%;
+  }
+  .cta h1 {
+    font-size: 1.3rem;
+  }
+  .cta p {
+    font-size: 0.8em;
+    margin-bottom: 8%;
+  }
+  .cta button {
+  font-size: 1rem;
+  padding: 0.3rem 1.5rem;
+  }
+
+  /* main */
+  .description p {
+    width: 95%;
+    font-size: 20px;
+   }
+   .tuotteet-bottom {
+    margin: 2vh 8vh;
+  }
+
+}
+@media screen and (max-width: 750px) {
+ 
+  /* header */
+  .header-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav a {
+    margin: 0;
+  }
+  .banner-desktop {
+    display: none;
+  }
+  .banner-mobile {
+    display: block;
+  }
+  .cta {
+    top: 15%;
+    left: 16%;
+    width: 70%;
+    border: none;
+    background-color: var(--color5);
+    border-radius: 10px;
+    padding: 15px 30px
+  }
+   .cta p {
+    font-weight: bold;
+   }
+
+   /* main content */
+   span {
+    display: none;
+   }
+   .main-content-middle {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .bestselletit {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  .alennus {
+    width: 100%;
+  }
+  .filters {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .dropdown-btn {
+    font-size: 0.77rem;
+  }
+  .tuotteet-bottom {
+    margin: 2vh 0.7vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vh;
+  }
+  .tuote-card {
+    max-width: 20vh;
+  }
+
+  /* yhteystiedot sivu */
+  .yhteystiedot-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .yhteystiedot-main-content h1 {
+    font-size: 1.8rem;
+  }
+  .yhteystiedot-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  /* footer */
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    margin-bottom: 2vh;
+  }
+}
